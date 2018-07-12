@@ -1,0 +1,39 @@
+servlets:
+
+  - java applet, designed to run on a server instead of a browser. (request - response)
+  - translator between user interface and server
+  - an app is only a servlet if its implements java servlet api (javax.servlet package)(GenereicServlet, HttpServlet)
+  - servlet life cycle controlled by the web container where the servlet is deployed
+    : init() initilize the servlet, once init, the container can send requests to the servlet through the service method
+    : service() any no of requests, each is serviced in its own thread
+    : detroy() at the end(deletion)
+    
+JSF:
+   - public face of the server
+   - workflow 
+    : create a web page
+    : associate web page with components via a set of tags
+    : associate the components on the webpage to server side data through a set of managed beans
+    : create a web deployment desciptor
+   - life cycle
+    : execute (build/refresh app view, apply params of request, recalculate components, code run)
+    : render (generating new user interface(html, xhtml) after the first step)
+ 
+ 
+ issues: 
+  - latency
+  - concurrent access
+  
+ Web context:
+  - init params
+    : specific values to be passed to certain components(font type, encoding style, data)
+  - resources associated with it (stored in web context - allowing sharing data b/w servlets)
+  - object value attributes
+  - functions dealing with logging data(log errors, monitor application)
+  
+  maintain client state within the application using session (HttpSession)
+  - getSession method of request(creates a new one if doesn't exist)
+  - store object value attributes 
+    : HttpSessionBindingListner
+    : HttpSessionActivationListner
+    : session timeout (get/setMaxActivationInterval) / invalidate method to invalidate session

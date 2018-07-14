@@ -1,14 +1,14 @@
-# GIT INSTRUCTIONS
+GIT INSTRUCTIONS
 
-## Create a local git repository
+Create a local git repository
 
-* **git init** - to initialize an empty git repository
-* **touch .gitignore** - to create an empty gitignore file. Update it with suitable data depending on your project
-* **git add .** - use to stage all files in the current directory and sub-directories, use relative paths if specific files need to be added
-* **git commit -m "your message here"** - commit the currently staged files
+* git init - to initialize an empty git repository
+* touch .gitignore - to create an empty gitignore file. Update it with suitable data depending on your project
+* git add . - use to stage all files in the current directory and sub-directories, use relative paths if specific files need to be added
+* git commit -m "your message here" - commit the currently staged files
 
 ## To add remote repository:
-* **git add remote origin <your-repo.git>**
+* git add remote origin <your-repo.git>
 
 ## To push to the master branch of the repository with alias 'origin'
-* **git push -u origin master**
+* git push -u origin master

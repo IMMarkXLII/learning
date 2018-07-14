@@ -7,8 +7,8 @@ Create a local git repository
 * git add . - use to stage all files in the current directory and sub-directories, use relative paths if specific files need to be added
 * git commit -m "your message here" - commit the currently staged files
 
-## To add remote repository:
+To add remote repository:
 * git add remote origin <your-repo.git>
 
-## To push to the master branch of the repository with alias 'origin'
+To push to the master branch of the repository with alias 'origin'
 * git push -u origin master

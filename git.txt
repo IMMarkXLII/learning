@@ -20,7 +20,7 @@ Checkout to a different branch:
 	* git checkout different-branch
 
 Create and checkout to a new branch:
-	* git checkout -b new-branch - creates new-branch and checkouts that branch.
+	* git checkout -b new-branch - creates 'new-branch' from the current branch and checks out that branch.
 
 Push a new branch to remote
 	* git push --set-upstream origin new-branch-local:new-branch-remote - push the local branch(left side of :) to a branch(right 			side of the :) on the remote repo.

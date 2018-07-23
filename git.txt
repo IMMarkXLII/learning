@@ -30,5 +30,7 @@ Remove unstaged changes:
 	* git clean -f -d  > -f for files and -d for directories
 
 Unstage commited changes:
-
 	* git rm -r --cached . > unstage all changes(including commited ones). Use this to apply gitignore post commit.
+	
+Unstage staged changes:
+	* git reset HEAD . > unstage all changes(not committed yet).

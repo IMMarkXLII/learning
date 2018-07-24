@@ -34,3 +34,10 @@ Unstage commited changes:
 	
 Unstage staged changes:
 	* git reset HEAD . > unstage all changes(not committed yet).
+
+make local branch track a branch from upstream or origin 
+	* git branch -u origin/foo
+
+	Or, if local branch foo is not the current branch:
+
+	* git branch -u origin/foo foo
